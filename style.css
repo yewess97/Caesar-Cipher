@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+p {
+    margin: 0;
+}
+
+.py-6 {
+    padding-block: 68px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 100%;
+    padding-inline: 0;
+}
+
+.row {
+    --mdb-gutter-x: 0;
+}
+
+.error {
+    font-size: 14px;
+}
+
+.content {
+    display: grid;
+    row-gap: 60px;
+}
+
+#caesar_cipher_form {
+    display: grid;
+    row-gap: 30px;
+    width: min(500px, 100%);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+#caesar_cipher_form .form-body {
+    display: grid;
+    row-gap: 20px;
+}
+
+#caesar_cipher_form .form-body input.form-control {
+    padding: 8px;
+}
+
+#caesar_cipher_form .form-body input.form-control + label {
+    top: 2px;
+}
+
+#caesar_cipher_form .form-body input.form-control:focus + label {
+    top: -3px;
+}
+
+.result {
+    display: grid;
+    row-gap: 25px;
+}
+
+.result .result-title {
+    color: #da6060;
+    text-shadow: 0 4px 8px #ffb685;
+    animation: swing 2s ease-in-out infinite;
+}
+
+.result .result-table {
+    border-radius: 25px;
+    box-shadow: 0 0.5rem 1.5rem rgba(132, 139, 200, 0.18);
+}
+
+@keyframes swing {
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
