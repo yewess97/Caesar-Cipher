@@ -60,7 +60,7 @@ p {
 }
 
 #caesar_cipher_form .form-body input.form-control {
-    padding: 8px;
+    padding: 8px 10px;
 }
 
 #caesar_cipher_form .form-body input.form-control + label {
